@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === 'development') app.use(morgan('dev'));
 else app.use(morgan('combined'));
 
 app.get('/ping', (req, res) => {
-    res.json({ status: 'ok', message: 'Orders Service OK' });
+    res.json({ status: 'ok', message: 'Orders Service OK 😊' });
 });
 
 app.use('/api/orders', orderRoutes);
